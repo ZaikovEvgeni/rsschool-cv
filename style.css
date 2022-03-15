@@ -1,0 +1,297 @@
+/*!*************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./assets/normalize/mynormalize.css ***!
+  \*************************************************************************************/
+  body {
+    margin: 0;
+  }
+  
+  *, 
+  *::before,
+  *::after{
+      box-sizing: border-box;
+  }
+  
+  
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+  
+  
+  ul,
+  p{
+  margin: 0;
+  padding: 0;
+  
+  }
+  
+  li{
+  list-style: none;
+  
+  }
+  
+  a{
+  text-decoration: none;
+  line-height: 0;
+  color: #000000;
+  }
+  
+  
+  img {
+    border-style: none;
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    line-height: 0;
+  }
+  
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 0; /* 1 */
+    margin: 0; /* 2 */
+    padding: 0;
+  }
+  
+  
+  /*!**********************************************************************!*\
+    !*** css ../node_modules/css-loader/dist/cjs.js!./styles/fonts.scss ***!
+    \**********************************************************************/
+  @font-face {
+    font-family: "Montserrat";
+    src: url(ac98a5f5ca71180fe293.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Roboto";
+    src: url(a8d6ac03c7b96b7acb62.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Open-Sans";
+    src: url(d7d7b8359eeb9cddfba6.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: "Open-Sans light";
+    src: url(846a12caf01a940847a7.ttf) format('truetype');
+  }
+  /*!*************************************************************************************************************!*\
+    !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/styl.sass ***!
+    \*************************************************************************************************************/
+  .education::before, .contacts::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 0;
+    width: 95%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  .content-title {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  body {
+    background: #797878;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    line-height: 1.1;
+    color: #000000;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0 10px;
+    padding-top: 30px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+  .header {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .header__photo {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .person {
+    width: 65%;
+    height: auto;
+    margin-left: 15px;
+  }
+  .person__name {
+    font-family: "Open-Sans", sans-serif;
+    font-size: 54px;
+    margin-bottom: 5px;
+  }
+  .person__info {
+    font-family: "Open-Sans light", sans-serif;
+    opacity: 0.5;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .person__text {
+    line-height: 1.4;
+  }
+  
+  .content {
+    padding: 0px 30px 0 30px;
+    display: flex;
+  }
+  
+  .info {
+    width: 35%;
+    padding-top: 30px;
+    background: #797878;
+    color: #fff;
+  }
+  
+  .contacts {
+    position: relative;
+    font-size: 22px;
+    line-height: 1.4;
+    padding-bottom: 40px;
+  }
+  .contacts__items {
+    color: #fff;
+  }
+  .contacts__items .contacts__item {
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 10px;
+  }
+  .contacts__items .contacts__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 30px 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+  .contacts__items .contacts__item.telegram::before {
+    background-image: url(8c45a8e3d6eb06eaddec.svg);
+  }
+  .contacts__items .contacts__item.vk::before {
+    background-image: url(81f98878c5cf1f6415bb.svg);
+  }
+  .contacts__items .contacts__item.email::before {
+    background-image: url(6538f2ccd6e06bcd5756.svg);
+  }
+  .contacts__items .contacts__item.maps::before {
+    background-image: url(0c941860a948895ffcfa.svg);
+  }
+  .contacts__items .contacts__item.github::before {
+    background-image: url(7894bcfab1ab247b6ad7.svg);
+  }
+  .contacts__items .contacts__item a {
+    position: relative;
+    color: #fff;
+    transition: 0.4s;
+  }
+  .contacts__items .contacts__item a:hover {
+    color: #000000;
+  }
+  .contacts__items .contacts__item a:active {
+    color: #fff;
+  }
+  
+  .info__titlies {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    padding-left: 5%;
+    margin-bottom: 15px;
+  }
+  
+  .education {
+    position: relative;
+    padding-bottom: 30px;
+  }
+  .education__inner {
+    padding-left: 5%;
+    margin-bottom: 30px;
+  }
+  .education__name {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  .education__text {
+    font-size: 18px;
+  }
+  
+  .skills {
+    padding-bottom: 30px;
+  }
+  .skills .skills__text {
+    position: relative;
+    text-transform: uppercase;
+    padding-left: 5%;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+  .skills .skills__text::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    transform: rotateX(-50%);
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .skills .skills__text.html_width::after {
+    width: 130px;
+  }
+  .skills .skills__text.css_width::after {
+    width: 120px;
+  }
+  .skills .skills__text.sass_width::after {
+    width: 120px;
+  }
+  .skills .skills__text.js_width::after {
+    width: 110px;
+  }
+  .skills .skills__text.webpack_width::after {
+    width: 110px;
+  }
+  .skills .skills__text.english_width::after {
+    width: 70px;
+  }
